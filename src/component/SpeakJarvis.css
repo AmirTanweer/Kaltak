@@ -1,0 +1,52 @@
+/* .popup{
+  position: fixed;
+  right: 4vw;
+  bottom: 23vh;
+  z-index: 1;
+} */
+#help{
+  position: fixed;
+  left: 3vw;
+  bottom: 4vh;
+  z-index: 1;
+}
+#logo_box{
+    position:fixed;
+    right: 3vw;
+    bottom: 3vh;
+    z-index: 1;
+  
+}
+#srch{
+    display:none;
+    height: 50px;
+    width: 500px;
+    border: 1px solid black;
+
+    border-radius: 22px;
+    
+}
+
+/* Define the keyframes for the animation */
+@keyframes spin {
+    0% {
+      
+      transform: rotateZ(0deg);
+    }
+    100% {
+      
+      transform: rotateZ(360deg);
+    }
+  }
+  
+  /* Apply the animation to the image */
+  #logo {
+    
+    /* background-size: cover; */
+    animation-name: spin;
+    animation-duration: 3s; /* adjust this as needed */
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  
